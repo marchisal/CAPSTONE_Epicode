@@ -1,0 +1,90 @@
+*{
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.puzpuz{
+width: 100%;
+background: #A7438A;
+background: -moz-linear-gradient(Sinistra, #A7438A 0%, #000000 50%, #A7438A 100%);
+background: -webkit-linear-gradient(Sinistra, #A7438A 0%, #000000 50%, #A7438A 100%);
+background: linear-gradient(to right, #A7438A 0%, #000000 50%, #A7438A 100%);
+padding: none!important;
+
+}
+
+.form{
+background:#A7438A;
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(5px);
+border: 1.5px solid black;
+-webkit-box-shadow: 5px 5px 15px 5px #000000;
+box-shadow: 5px 5px 15px 5px #000000;
+}
+
+input:active, input:hover, select:active, select:hover{
+  border: solid 1px white;
+}
+hr{
+  color: transparent;
+}
+
+input, select{
+  background-color:transparent;
+  color: white;
+  border: 1px solid transparent;
+  border-bottom: 1px white solid;
+  border-radius: 0 0 10px 10px;
+}
+
+input::placeholder, select[value="default"]{
+  color: white;
+}
+
+input:focus, select:focus{
+  background-color: rgba(255, 255, 255,0.2);
+  box-shadow: none;
+}
+
+select{
+  background-image: white;
+  color: white;
+}
+
+option:hover{
+  background-color: white;
+  color: black;
+  box-shadow: none;
+}
+
+select option{
+  background-color: #A7438A;
+}
+
+select option:hover, select option:checked{
+  background-color: #A7438A;
+}
+
+label{
+  font-weight: 800;
+}
+
+.btn-primary{
+  border: solid 3px black;
+  background-color: white;
+  color: gray;
+  font-weight: 800;
+}
+
+.logo{
+  width: 150px;
+  height: 150px;
+}
+
+button:hover{
+  background-color: rgba(237, 157, 214);
+  color: white;
+}
+
+

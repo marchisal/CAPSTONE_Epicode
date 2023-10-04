@@ -1,0 +1,147 @@
+
+
+.allHome{
+  background: #A7438A;
+background: -moz-linear-gradient(Sinistra, #A7438A 0%, #000000 50%, #A7438A 100%);
+background: -webkit-linear-gradient(Sinistra, #A7438A 0%, #000000 50%, #A7438A 100%);
+background: linear-gradient(to right, #A7438A 0%, #000000 50%, #A7438A 100%);
+}
+
+
+.navbar {
+  width: 100%;
+  border-bottom: solid 1px white;
+}
+
+.navbar-brand {
+  color: white; /* Colore del testo del logo */
+  font-size: 1.5rem; /* Dimensione del testo del logo */
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 400;
+}
+
+.navbar-toggler-icon {
+  background-color: #A7438A; /* Colore dell'icona del pulsante di toggle */
+}
+
+
+
+
+/* Stili per il contenitore dell'immagine (genitore dell'immagine) */
+.image-container {
+  height: 100vh; /* Imposta l'altezza al 100% dell'altezza della viewport */
+  overflow: hidden; /* Nasconde eventuali parti in eccesso dell'immagine */
+}
+
+/* Stili per l'immagine */
+.image-container img {
+  height: 100%; /* Imposta l'altezza dell'immagine al 100% dell'altezza del contenitore */
+  width: 100%; /* Imposta la larghezza dell'immagine al 100% del contenitore */
+  object-fit: cover; /* Scala l'immagine in modo che copra completamente il contenitore */
+}
+
+#carouselExampleControls .carousel-inner div img{
+  height: calc(100vh - 62px - 32px);
+
+
+}
+
+
+#logomdt{
+  height: 100px;
+  padding: 10px;
+}
+
+
+
+
+
+.textMDT{
+  font-size: 100%;
+  font-weight: 600;
+
+}
+
+
+.car{
+  margin-top: 116px;
+
+
+}
+
+.carImg{
+  height: calc(100vh - 116px);
+  display: flex;
+  justify-content: center;
+}
+
+
+.ig{
+  height: 100%;
+  width: 100%;
+  border: none;
+  color: #A7438A;
+  &:hover{
+    background-color: #A7438A;
+    color: white;
+  }
+}
+
+footer {
+  padding: 20px;
+
+}
+
+footer  .logo{
+  height: 70px;
+  width: 380px;
+
+}
+
+footer  .logo a {
+  height: 100%;
+  width: 100%;
+  margin:0;
+  padding: 0;
+}
+
+footer  .logo a svg{
+  height: 50px;
+  width: 50px;
+  margin: 0 15px;
+}
+
+footer  .logo a span{
+  font-size: 1.4em;
+}
+
+footer{
+  height: 300px;
+background: linear-gradient(to right, #A7438A 0%, #000000 50%, #A7438A 100%);
+
+}
+
+footer .logo a{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+
+}
+
+.mich{
+  width: 50px;
+  height: 50px;
+}
+
+.img-fluid{
+  width: 100%
+}
+
+.icone{
+  background: #A7438A;
+  background: -moz-linear-gradient(Sinistra, #A7438A 0%, #000000 50%, #A7438A 100%);
+  background: -webkit-linear-gradient(Sinistra, #A7438A 0%, #000000 50%, #A7438A 100%);
+  background: linear-gradient(to right, #A7438A 0%, #000000 50%, #A7438A 100%);
+}
+

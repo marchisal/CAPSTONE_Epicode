@@ -1,0 +1,51 @@
+<div class="firstDiv h-100">
+
+<div class="container-fluid bg-black firstDiv">
+  <div class="row justify-content-center py-5">
+    <div class="col-10 d-flex justify-content-center">
+      <button (click)="allPrev()" class="btn text-white tasto align-items-center">Visualizza tutte le richieste di preventivo</button>
+    </div>
+    <div class="col-4 d-inline ">
+      <div class="">
+        <form id="barraRicerca" #f="ngForm" (ngSubmit)="searchPrev()">
+          <label for="nome" class="p-1"></label>
+          <input [(ngModel)]="searchLocation" name="searchLocation" type="text" class="form-control" id="nome"
+            placeholder="Inserisci il nome del cliente" required ngModel>
+          <button id="bottone" class="btn text-white mt-2" type="submit">Cerca</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-black firstDiv">
+  <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4" *ngFor="let requestPrev of requestsPrev">
+      <div class="card">
+        <div class="card-body">
+          <h4>Info Preventivo</h4>
+          <p class="card-text info">NOME:<br> {{requestPrev.name}}</p>
+          <p class="card-text info">COGNOME:<br> {{requestPrev.surname}}</p>
+          <p class="card-text info">CODICE FISCALE:<br> {{requestPrev.fiscalCode}}</p>
+          <p class="card-text info">CELL.:<br> {{requestPrev.telephoneNumber}}</p>
+          <p class="card-text info">EMAIL:<br> {{requestPrev.email}}</p>
+          <p class="card-text info">DESCRIZIONE DEL TATUAGGIO:<br> {{requestPrev.tattooDescription}}</p>
+          <p class="card-text info">DIMENSIONI:<br> {{requestPrev.tattooSize}}</p>
+          <p class="card-text info">PARTE DEL CORPO:<br> {{requestPrev.bodyPart}}</p>
+          <button class="bg-black text-white me-5 mt-1" (click)="getOnePrev" [routerLink]="['/richiestaPreventivo/',requestPrev.id]">Modifica</button>
+          <button class="bg-black text-white mt-1" (click)="deletePrev(requestPrev.id!)">Cancella</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid tornahome">
+  <div class="row justify-content-center py-5">
+    <div  class="col-10 d-flex justify-content-center">
+      <button [routerLink]="['/homeAdmin']" type="button" class="btn btn-dark mt-5">Torna alla Home</button>
+    </div>
+  </div>
+</div>
+</div>
+

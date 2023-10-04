@@ -1,0 +1,36 @@
+
+.rosa{
+  width: 350px;
+  height: 350px;
+}
+
+
+
+
+
+
+
+.btn {
+  height: 100%;
+  width: 100%;
+  font-size: 50px;
+  font-family: 'Nunito Sans', sans-serif;
+  border: 1.5px solid black;
+}
+
+.btn svg{
+  transition: 1s ease-in-out;
+}
+
+.btn:hover svg{
+  background-color: #A7438A;
+  transform: scale(2) translateX(300px);
+
+}
+
+
+
+
+
+
+

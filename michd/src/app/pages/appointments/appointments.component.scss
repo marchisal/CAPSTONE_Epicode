@@ -1,0 +1,37 @@
+
+.firstDiv{
+  background: #A7438A;
+background: -moz-linear-gradient(Sinistra, #A7438A 0%, #000000 50%, #A7438A 100%);
+background: -webkit-linear-gradient(Sinistra, #A7438A 0%, #000000 50%, #A7438A 100%);
+background: linear-gradient(to right, #A7438A 0%, #000000 50%, #A7438A 100%);
+}
+
+button:hover{
+  background-color: #A7438A;
+  transform: scale(1.1);
+}
+
+.card{
+  background-color: #A7438A;
+  border: 1px solid black;
+-webkit-box-shadow: 5px 5px 15px 5px #000000;
+box-shadow: 5px 5px 15px 5px #000000;
+
+}
+
+.info{
+  color: white;
+}
+
+button{
+  border: 1px solid black;
+}
+
+.tornahome{
+  background: #A7438A;
+  background: -moz-linear-gradient(Sinistra, #A7438A 0%, #000000 50%, #A7438A 100%);
+  background: -webkit-linear-gradient(Sinistra, #A7438A 0%, #000000 50%, #A7438A 100%);
+  background: linear-gradient(to right, #A7438A 0%, #000000 50%, #A7438A 100%);
+}
+
+

@@ -1,0 +1,22 @@
+
+  <div class="card-container bg-dark sf">
+   <div class="card">
+     <div class="card-body">
+       <h5 class="card-title text-white">Login</h5>
+        <form #f="ngForm">
+              <label for="Username" class="p-1">Username:</label>
+              <input name="username" type="Username" class="form-control" id="Username" placeholder="Inserisci il tuo username" required ngModel>
+              <div class="form-group">
+                <label for="password" class="p-1">Password:</label>
+                <input type="password" name="password" class="form-control" id="password" placeholder="Inserisci la password" required ngModel>
+              </div>
+              <div class="mt-5">
+              <button class="btn btn-dark me-5" type="submit" (click)="signAdmin()">Accedi</button>
+              <button [routerLink]="['/home']" type="button" class="btn btn-dark">Torna alla Home</button>
+            </div>
+        </form>
+        <div class="alert alert-danger my-3" role="alert" *ngIf="error"> {{error}} </div>
+      </div>
+    </div>
+  </div>
+
